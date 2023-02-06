@@ -26,5 +26,6 @@ for name in names_source:
     crypto.append({'currency': curr_name, 'value': curr_value})
     i += 1
 
-s = pd.DataFrame(crypto)
-print(s)
+df = pd.DataFrame(crypto)
+df.to_csv("data.csv")
+print(df)
